@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>SM Town ans Store</title>
+    <link rel="stylesheet" href="css/swiper.css">
+
+    <title>Personal Site</title>
   </head>
   <body>
     <header id="header">
@@ -13,7 +16,7 @@
         <ul>
           <li><a href="#">LOGIN</a></li>
           <li><a href="#">JOIN</a></li>
-          <li><a href="#">KOR</a></li>
+          <li><a href="#">KOR <i class="fa fa-angle-down"></i></a></li>
         </ul>
       </div>
       <nav class="gnb">
@@ -30,9 +33,45 @@
           <div class="gnb_logo">
             <a href="#"><img src="img/logo.jpg" alt="로고"></a>
           </div>
-          <div class="gnb_member"></div>
+          <div class="gnb_member">
+            <ul>
+              <li><a href="#"><i class="fa fa-user"></i></a></li>
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+              <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+              <li><a href="#"><i class="fa fa-bookmark-o"></i></a></li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <div class="header_bg"></div>
     </header>
+    
+    <section id="main">
+      <div class="main_wrapper">
+        <div class="main_slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/banner5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/aside_cscenter.jpg" alt=""></div>
+            </div>
+            <!-- 네비게이션 버튼 -->
+            <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+            <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+
+            <!-- 페이징 -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script src="js/swiper.js"></script>
+  <script src="js/custom.js"></script>
+
+
   </body>
 </html>

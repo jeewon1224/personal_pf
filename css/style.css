@@ -1,0 +1,30 @@
+#header{width: 100%; height: auto; }
+#header .header_top{max-width: 1200px; height: 30px; margin: auto;}
+#header .header_top>ul{display: flex; width: 100%; height: 100%; justify-content: flex-end; align-items: center;}
+#header .header_top>ul>li{margin-left: 40px;}
+
+#header .gnb{width: 100%; height: 80px; position: relative;}
+.gnb .gnb_wrapper{position: relative; max-width: 1200px; height: 100%; margin: auto;}
+.gnb .gnb_wrapper .gnb_menu{height: 100%; display: inline-block; position: absolute;}
+.gnb .gnb_wrapper .gnb_menu>ul{display: flex; height: 100%; align-items: center;}
+.gnb .gnb_wrapper .gnb_menu>ul>li{margin-right: 40px;}
+.gnb .gnb_wrapper .gnb_logo{height: 80px; position: absolute; left: 50%; transform: translateX(-50%);}
+.gnb .gnb_wrapper .gnb_logo>a{height: 80px;}
+.gnb .gnb_wrapper .gnb_logo img{height: 100%;}
+
+.gnb .gnb_wrapper .gnb_member{height: 100%;}
+.gnb .gnb_wrapper .gnb_member>ul{display: flex;  align-items: center; height: 100%; position: absolute; right: 0;}
+.gnb .gnb_wrapper .gnb_member>ul>li{margin-left: 50px; font-size: 20px;}
+
+.header_bg{width: 100%; height: 680px; background-color: bisque; position: absolute; top: 0; z-index: -1;}
+
+
+
+/* 메인 */
+/* 슬라이더 */
+#main{width: 100%; height: auto;}
+#main .main_wrapper{width: 100%; height: auto;}
+#main .main_slider{position: absolute; top: 180px; width: 100%; }
+#main .main_slider .swiper-container{}
+#main .main_slider .swiper-container .swiper-wrapper{}
+#main .main_slider .swiper-container .swiper-wrapper .swiper-slide{}
