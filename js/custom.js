@@ -14,10 +14,10 @@ $(function(){
 		preloadImages: false,
     spaceBetween: 100,
     loop: true,
-		// autoplay: {
-		//   delay: 2000,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: {
+		  delay: 2000,
+			disableOnInteraction: false,
+		},
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -92,15 +92,8 @@ $(function(){
     var mySwiper = new Swiper('.album_slide', {
       // Optional parameters 
       slidesPerView: 'auto', // 슬라이드를 한번에 3개를 보여준다
-      // slidesPerGroup : 3, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
-    
-      
-      // 그룹수가 맞지 않을 경우 빈칸으로 메우기
-      // 3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듬
       // loopFillGroupWithBlank : true,
-
       loop: true, // loop 를 true 로 할경우 무한반복 슬라이드, false 로 할경우 슬라이드의 끝에서 더보여지지 않음
-
       // If we need pagination 
       pagination: {
           el: '.album-swiper-pagination',

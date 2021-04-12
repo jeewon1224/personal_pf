@@ -494,7 +494,8 @@
         <div class="swiper-container album_slide">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="img/new_album/1-1.jpg" alt="">
+                <img src="img/new_album/1-1.jpg" alt="" class="cover">
+                <img src="img/new_album/1-2.png" alt="" class="record">
                 <div class="album_desc">
                   <span>BoA The 10th Album</span>
                   <h3>BETTER</h3>
@@ -583,22 +584,29 @@
             <iframe width="966" height="543" src="https://www.youtube.com/embed/Xipa65PwdrI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="966" height="543" src="https://www.youtube.com/embed/fMoGqCC_Nrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
+
           <div class="vid_thumb">
-            <div class="slider">
-              <div class="test"><img src="img/vid_thumb/index-story-thumb-albertcoding_lg.jpg" alt=""></div>
-              <img src="img/vid_thumb/index-story-thumb-albertcoding_lg.jpg" alt="">
-              <img src="img/vid_thumb/index-story-thumb-albertcoding_lg.jpg" alt="">
-              <img src="img/vid_thumb/index-story-thumb-albertcoding_lg.jpg" alt="">
-              <img src="img/vid_thumb/index-story-thumb-albertcoding_lg.jpg" alt="">
-              <img src="img/vid_thumb/index-story-thumb-albertcoding_lg.jpg" alt="">
-              <img src="img/vid_thumb/index-story-thumb-albertcoding_lg.jpg" alt="">
-              <img src="img/vid_thumb/index-story-thumb-albertcoding_lg.jpg" alt="">
-            </div>
+            
+              <div class="thumb_slider">
+                <div><img src="img/vid_thumb/index-story-thumb-mom_lg.jpg" alt=""></div>
+                <div><img src="img/vid_thumb/index-story-thumb-mom_lg.jpg" alt=""></div>
+                <div><img src="img/vid_thumb/index-story-thumb-mom_lg.jpg" alt=""></div>
+                <div><img src="img/vid_thumb/index-story-thumb-mom_lg.jpg" alt=""></div>
+                <div><img src="img/vid_thumb/index-story-thumb-mom_lg.jpg" alt=""></div>
+                <div><img src="img/vid_thumb/index-story-thumb-mom_lg.jpg" alt=""></div>
+                
+              </div>
+             
           </div>
         </div>
       </div>
 
 
+
+
+      <div id="carrier">
+        <span>캐리어 <strong>스토리허브</strong></span>
+      </div>
 
 
     </section>
@@ -607,39 +615,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/custom.js"></script>
    <script>
 
 jQuery(document).ready(function($) {
-      $('.slider').slick({
+      $('.thumb_slider').slick({
         dots: false,
         infinite: true,
+        arrows: true,
         vertical:true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
         // autoplay: true,
         autoplaySpeed: 2000,
-        arrows: false,
-        responsive: [{
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-           breakpoint: 400,
-           settings: {
-              arrows: false,
-              slidesToShow: 1,
-              slidesToScroll: 1
-           }
-        }]
+        nextArrow:$('.next'),
+        prevArrow:$('.prev'),
     });
 });
 
